@@ -33,19 +33,19 @@ export default function Gallery() {
   }, [lightbox, closeLightbox, nextImage, prevImage]);
 
   return (
-    <section id="gallery" ref={ref} className="relative bg-ink-950 py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+    <section id="gallery" ref={ref} className="relative bg-ink-950 px-4 py-16 sm:px-6 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-7xl lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Featured Event Gallery
           </p>
-          <h2 className="font-serif text-4xl font-light leading-tight text-ink-50 md:text-5xl lg:text-6xl">
+          <h2 className="font-serif text-3xl font-light leading-tight text-ink-50 sm:text-4xl md:text-5xl lg:text-6xl">
             Moments of <span className="gold-text font-medium">Excellence</span>
           </h2>
         </div>
 
         {/* Category filter */}
-        <div className={`reveal ${visible ? 'is-visible' : ''} mt-10 flex flex-wrap justify-center gap-2`}>
+        <div className={`reveal ${visible ? 'is-visible' : ''} mt-8 flex flex-wrap justify-center gap-2 sm:mt-10`}>
           {galleryCategories.map((cat) => (
             <button
               key={cat}
@@ -62,7 +62,7 @@ export default function Gallery() {
         </div>
 
         {/* Masonry gallery */}
-        <div className="mt-12 masonry">
+        <div className="mt-8 masonry sm:mt-12">
           {filtered.map((item, i) => (
             <div
               key={`${item.title}-${i}`}

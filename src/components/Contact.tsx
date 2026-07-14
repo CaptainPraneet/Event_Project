@@ -96,7 +96,7 @@ ${form.message.trim() || 'No message provided.'}`;
         <div className="mt-12 grid gap-6 sm:mt-16 sm:gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Contact info + map */}
           <div className={`reveal ${visible ? 'is-visible' : ''} space-y-6`}>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
               <a href="tel:+919833303800" className="group flex min-w-0 items-center gap-4 rounded-2xl glass p-4 sm:p-5 lux-shadow-hover">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold-400/30 text-gold-300 transition-colors group-hover:bg-gold-400 group-hover:text-ink-950">
                   <Phone size={18} />

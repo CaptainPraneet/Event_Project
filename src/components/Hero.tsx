@@ -12,7 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="top" className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section id="top" className="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-4 sm:px-6">
       <div className="absolute inset-0">
         <img
           src="https://images.pexels.com/photos/2014773/pexels-photo-2014773.jpeg?auto=compress&cs=tinysrgb&w=1920"
@@ -23,22 +23,22 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-ink-975/70 via-transparent to-ink-975/40" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-        <p className="mb-6 text-xs font-medium uppercase tracking-[0.35em] text-gold-300 animate-fade-in">
+      <div className="relative z-10 mx-auto w-full max-w-5xl px-2 py-16 text-center sm:px-6">
+        <p className="mb-5 text-xs font-medium uppercase tracking-[0.35em] text-gold-300 animate-fade-in sm:mb-6">
           Luxury International Event Management
         </p>
 
-        <h1 className="font-serif text-5xl font-light leading-[1.1] text-ink-50 sm:text-6xl md:text-7xl lg:text-8xl animate-fade-up">
+        <h1 className="font-serif text-4xl font-light leading-[1.1] text-ink-50 sm:text-5xl md:text-7xl lg:text-8xl animate-fade-up">
           Creating Extraordinary
           <br />
           <span className="gold-text font-medium italic">Experiences Worldwide</span>
         </h1>
 
-        <p className="mt-6 text-base font-medium tracking-wide text-gold-200/90 md:text-lg animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        <p className="mt-5 text-sm font-medium tracking-wide text-gold-200/90 sm:text-base md:text-lg animate-fade-up" style={{ animationDelay: '0.15s' }}>
           600+ Weddings &nbsp;•&nbsp; 200+ Corporate Events &nbsp;•&nbsp; Global Event Professionals
         </p>
 
-        <p className="mx-auto mt-8 max-w-3xl text-base font-light leading-relaxed text-ink-100/70 md:text-lg animate-fade-up" style={{ animationDelay: '0.3s' }}>
+        <p className="mx-auto mt-6 max-w-3xl text-sm font-light leading-relaxed text-ink-100/70 sm:text-base md:text-lg animate-fade-up" style={{ animationDelay: '0.3s' }}>
           Team Vicky is a trusted event management company delivering exceptional weddings,
           destination weddings, luxury celebrations, corporate events, logistics, production,
           hospitality, show running, backstage operations, and on-ground execution across India
@@ -46,7 +46,7 @@ export default function Hero() {
           professionalism, and attention to detail.
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row animate-fade-up" style={{ animationDelay: '0.45s' }}>
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4 animate-fade-up" style={{ animationDelay: '0.45s' }}>
           <a
             href="#contact"
             className="group inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-sm font-semibold text-ink-950 transition-all duration-300 hover:bg-gold-300 hover:shadow-lg hover:shadow-gold-500/30"
@@ -80,7 +80,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 sm:bottom-8">
         <span className="text-xs uppercase tracking-[0.3em] text-ink-100/40">Scroll</span>
         <ChevronDown size={20} className="animate-bounce text-gold-300/60" />
       </div>

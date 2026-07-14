@@ -8,16 +8,16 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" ref={ref} className="relative bg-ink-950 py-24 md:py-32">
-      <div className="mx-auto max-w-4xl px-6 lg:px-10">
+    <section id="faq" ref={ref} className="relative bg-ink-950 px-4 py-16 sm:px-6 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-4xl lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             FAQ
           </p>
-          <h2 className="font-serif text-4xl font-light leading-tight text-ink-50 md:text-5xl lg:text-6xl">
+          <h2 className="font-serif text-3xl font-light leading-tight text-ink-50 sm:text-4xl md:text-5xl lg:text-6xl">
             Frequently Asked <span className="gold-text font-medium">Questions</span>
           </h2>
-          <p className="mt-6 text-base font-light text-ink-100/60">
+          <p className="mt-6 text-sm font-light text-ink-100/60 sm:text-base">
             Have a question that isn't covered here? Reach us on WhatsApp at{' '}
             <a
               href="https://wa.me/919833303800"
@@ -29,7 +29,7 @@ export default function FAQ() {
           </p>
         </div>
 
-        <div className="mt-16 space-y-3">
+        <div className="mt-10 space-y-3 sm:mt-16">
           {faqs.map((faq, i) => (
             <div
               key={i}
@@ -38,7 +38,7 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="flex w-full items-center justify-between gap-4 p-6 text-left"
+                className="flex w-full items-center justify-between gap-4 p-4 text-left sm:p-6"
               >
                 <span className="font-serif text-lg font-medium text-ink-50">{faq.q}</span>
                 {openIndex === i ? (
@@ -53,7 +53,7 @@ export default function FAQ() {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="px-6 pb-6 text-base font-light leading-relaxed text-ink-100/60">
+                  <p className="px-4 pb-4 text-sm font-light leading-relaxed text-ink-100/60 sm:px-6 sm:pb-6 sm:text-base">
                     {faq.a}
                   </p>
                 </div>

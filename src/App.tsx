@@ -18,9 +18,9 @@ import FloatingButtons from './components/FloatingButtons';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-ink-975 text-ink-50">
+    <div className="min-h-screen overflow-x-hidden bg-ink-975 text-ink-50">
       <Navbar />
-      <main>
+      <main className="overflow-x-hidden">
         <Hero />
         <Founder />
         <Counters />

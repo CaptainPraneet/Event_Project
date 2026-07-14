@@ -14,9 +14,9 @@ export default function Founder() {
   const { ref, visible } = useReveal();
 
   return (
-    <section id="founder" ref={ref} className="relative bg-ink-975 py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+    <section id="founder" ref={ref} className="relative bg-ink-975 px-4 py-16 sm:px-6 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-7xl lg:px-10">
+        <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Portrait */}
           <div className={`reveal ${visible ? 'is-visible' : ''} relative mx-auto max-w-md lg:mx-0`}>
             <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-gold-300/30 via-gold-500/15 to-gold-700/10 blur-3xl" />

@@ -16,8 +16,8 @@ export default function Testimonials() {
   }, [next]);
 
   return (
-    <section ref={ref} className="relative bg-ink-975 py-24 md:py-32">
-      <div className="mx-auto max-w-5xl px-6 lg:px-10">
+    <section ref={ref} className="relative bg-ink-975 px-4 py-16 sm:px-6 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-5xl lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Client Testimonials
@@ -27,7 +27,7 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div className={`reveal ${visible ? 'is-visible' : ''} relative mt-16`} style={{ transitionDelay: '0.2s' }}>
+        <div className={`reveal ${visible ? 'is-visible' : ''} relative mt-10 sm:mt-16`} style={{ transitionDelay: '0.2s' }}>
           <Quote size={48} className="mx-auto text-gold-400/20" />
 
           <div className="relative mt-8 min-h-[320px]">
