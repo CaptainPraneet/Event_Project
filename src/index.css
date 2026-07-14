@@ -4,8 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
+  min-width: 320px;
 }
 
 body {
@@ -14,6 +19,14 @@ body {
   color: #f6f6f4;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  min-width: 320px;
+}
+
+img,
+iframe,
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 ::selection {

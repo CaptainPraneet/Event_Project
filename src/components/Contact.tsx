@@ -79,25 +79,25 @@ ${form.message.trim() || 'No message provided.'}`;
   };
 
   return (
-    <section id="contact" ref={ref} className="relative bg-ink-950 py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+    <section id="contact" ref={ref} className="relative bg-ink-950 px-4 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-7xl">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Get In Touch
           </p>
-          <h2 className="font-serif text-4xl font-light leading-tight text-ink-50 md:text-5xl lg:text-6xl">
+          <h2 className="font-serif text-3xl font-light leading-tight text-ink-50 sm:text-4xl md:text-5xl lg:text-6xl">
             Let's Create Something <span className="gold-text font-medium">Extraordinary</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-base font-light text-ink-100/60">
+          <p className="mx-auto mt-6 max-w-xl text-sm font-light text-ink-100/60 sm:text-base">
             Share your vision with us. We respond within one working day — often within hours.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-2 lg:gap-12">
+        <div className="mt-12 grid gap-6 sm:mt-16 sm:gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Contact info + map */}
           <div className={`reveal ${visible ? 'is-visible' : ''} space-y-6`}>
             <div className="grid gap-4 sm:grid-cols-2">
-              <a href="tel:+919833303800" className="group flex items-center gap-4 rounded-2xl glass p-5 lux-shadow-hover">
+              <a href="tel:+919833303800" className="group flex min-w-0 items-center gap-4 rounded-2xl glass p-4 sm:p-5 lux-shadow-hover">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold-400/30 text-gold-300 transition-colors group-hover:bg-gold-400 group-hover:text-ink-950">
                   <Phone size={18} />
                 </div>
@@ -111,7 +111,7 @@ ${form.message.trim() || 'No message provided.'}`;
                 href="https://wa.me/919833303800?text=Hi%20Team%20Vicky%2C%20I%27d%20like%20to%20enquire%20about%20an%20event."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 rounded-2xl glass p-5 lux-shadow-hover"
+                className="group flex min-w-0 items-center gap-4 rounded-2xl glass p-4 sm:p-5 lux-shadow-hover"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold-400/30 text-gold-300 transition-colors group-hover:bg-gold-400 group-hover:text-ink-950">
                   <MessageCircle size={18} />
@@ -122,17 +122,17 @@ ${form.message.trim() || 'No message provided.'}`;
                 </div>
               </a>
 
-              <a href="mailto:info@teamvicky.com" className="group flex items-center gap-4 rounded-2xl glass p-5 lux-shadow-hover">
+              <a href="mailto:teamvicky488@gmail.com" className="group flex min-w-0 items-center gap-4 rounded-2xl glass p-4 sm:p-5 lux-shadow-hover">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold-400/30 text-gold-300 transition-colors group-hover:bg-gold-400 group-hover:text-ink-950">
                   <Mail size={18} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs uppercase tracking-wider text-ink-100/40">Email</p>
-                  <p className="font-medium text-ink-50">info@teamvicky.com</p>
+                  <p className="truncate font-medium text-ink-50">teamvicky488@gmail.com</p>
                 </div>
               </a>
 
-              <div className="flex items-center gap-4 rounded-2xl glass p-5">
+              <div className="flex min-w-0 items-center gap-4 rounded-2xl glass p-4 sm:p-5">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gold-400/30 text-gold-300">
                   <MapPin size={18} />
                 </div>
@@ -170,7 +170,7 @@ ${form.message.trim() || 'No message provided.'}`;
 
           {/* Form */}
           <div className={`reveal ${visible ? 'is-visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
-            <form onSubmit={handleSubmit} className="rounded-3xl glass p-8 md:p-10">
+            <form onSubmit={handleSubmit} className="w-full rounded-3xl glass p-6 sm:p-8 md:p-10">
               {status === 'success' ? (
                 <div className="flex flex-col items-center justify-center py-16 text-center">
                   <CheckCircle2 size={56} className="text-gold-400" />
